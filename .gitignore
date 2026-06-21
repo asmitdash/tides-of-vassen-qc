@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+
+# PocketBase data + binary (binary is large; data is local-only)
+pocketbase.exe
+pb_data/
+pb_logs.db*
+
+# Node / Next.js
+node_modules/
+.next/
+.vercel/
+out/
+*.tsbuildinfo
+
+# Env files (contain creds)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Eval outputs
+evals/results/
+evals/sets/perturbed/
+evals/sets/clean/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Claude Code session log
+context.md
+
+# Tmp
+/tmp/
+*.log

@@ -1,0 +1,45 @@
+{
+  "title": "The Tides of Vassen",
+  "season_count": 1,
+  "episode_count": 5,
+  "year_of_setting": 1903,
+  "genre": ["Noir", "Fantasy", "Detective", "Period Drama"],
+  "logline": "In a sinking coastal city where remembering is a crime, a widowed inspector hunts a killer who leaves verses carved into the dead — and discovers the verses are in his late wife's handwriting.",
+  "tone": "Terse, melancholic, lyrical when the magic system surfaces. Procedural bones with a fairy-tale undertow. Rain on stone. Lanterns going out one by one.",
+  "voice_card": {
+    "pace": "deliberate; long pauses between dialogue beats; scenes end one line before you expect",
+    "tone_words": [
+      "salt-bitten",
+      "hushed",
+      "guttering",
+      "tidewater",
+      "ledger-grey",
+      "ecclesiastic",
+      "patient",
+      "drowned",
+      "moonlit",
+      "marrow-cold"
+    ],
+    "sentence_length_target": "median 9 words; recaps and inner-monologue may run to 18; never above 24",
+    "pov": "third-person limited, primarily Hale; rotates to Verity in ep03 and Mira in ep05",
+    "forbidden_register": [
+      "wisecrack one-liners",
+      "modern slang",
+      "exposition by villain monologue",
+      "sentimental music cues described in prose"
+    ]
+  },
+  "world_rules": [
+    "Memory-magic (called 'mnemoncraft') functions only under direct moonlight; clouded skies, eclipses, and indoor settings nullify it.",
+    "Mnemoncraft was outlawed in Vassen by the Lantern Edict of 1881; possession of a memory-stone is a hanging offense.",
+    "A memory-stone, once read, cracks; the memory inside is destroyed in the reading. Memories cannot be copied.",
+    "The Vassen Compass does not point north; it points to the nearest unspoken lie within seven paces of its bearer.",
+    "The city of Vassen has been sinking at a measured rate of one inch per year since 1879; the Tide Surge of that year drowned the Eastern District in a single night.",
+    "Tide Witches are women who can speak with the drowned; the gift is matrilineal and breaks the speaker's voice by middle age.",
+    "Iron disrupts mnemoncraft within a six-foot radius; constables carry iron cuffs for this reason.",
+    "The dead of Vassen are buried at sea in weighted shrouds; there are no graves within the city walls.",
+    "The Council of Nine governs Vassen; their seats are hereditary and their votes are sealed with wax stamped by personal sigil rings.",
+    "Salt is currency in the Lower Wards; coin in the Upper City. The exchange is fixed at one peck of salt per silver crown."
+  ],
+  "season_arc_summary": "Inspector Casimir Hale investigates the murder of a Council clerk found in the abandoned Eastern District with a verse carved into his sternum. The verse is in the handwriting of Hale's wife Eline, dead five years. As more bodies surface, Hale's partner Verity Crane is revealed to be the last living Tide Witch — and the killer is using her gift, against her will, to extract verses from Eline's drowned shade. The conspiracy reaches Councilor Thane, whose Black Ledger documents two decades of bribes that kept the Eastern District officially abandoned to hide a buried Council crime. The season closes with the Vassen Compass destroyed, Thane dead, and Hale carrying the cracked memory-stone of his wife's final night — unread, and unreadable now."
+}

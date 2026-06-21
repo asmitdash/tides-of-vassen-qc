@@ -1,0 +1,72 @@
+recap_quality:
+  description: |
+    LLM-judge rubric for episode recap quality. Each axis is scored independently
+    by Opus 4.7 acting as judge against a gold "previously on" recap or, when no
+    gold exists, against the show bible + prior episodes as ground truth.
+  axes:
+    coverage:
+      scale: [0, 5]
+      anchors:
+        0: misses every beat needed for the upcoming episode
+        3: covers most beats; misses one critical setup
+        5: covers exactly the beats needed, no more
+    voice_match:
+      scale: [0, 5]
+      anchors:
+        0: generic narrator voice; could be from any show
+        3: roughly matches the show's register but inconsistent
+        5: indistinguishable from a human-written recap of this show
+    length_adherence:
+      scale: [0, 3]
+      anchors:
+        0: exceeds 2x or falls below 0.5x of target word count
+        2: within 25 percent of target
+        3: within 10 percent of target
+    no_hallucination:
+      scale: [0, 1]
+      type: binary
+      anchors:
+        0: any factual claim not present in canon
+        1: every claim verifiable in canon
+    no_spoiler:
+      scale: [0, 1]
+      type: binary
+      anchors:
+        0: any reference to events from episode N or later
+        1: zero references to episode N or beyond
+
+  pass_thresholds:
+    coverage_min: 3.5
+    voice_match_min: 3.0
+    length_min: 2.0
+    no_hallucination_must_be: 1
+    no_spoiler_must_be: 1
+
+plot_hole_flag_quality:
+  description: |
+    Per-flag judge rubric, applied AFTER deterministic precision/recall scoring.
+    Used to grade WHY a flag is good or bad, not just whether it fired.
+  axes:
+    severity_calibration:
+      scale: [0, 3]
+      anchors:
+        0: severity wildly off (HARD on a non-issue, or INTENTIONAL_TENSION on a real break)
+        2: one tier off
+        3: severity matches the gold label
+    citation_correctness:
+      scale: [0, 1]
+      type: binary
+      anchors:
+        0: verbatim_quote does not appear in cited canon source
+        1: verbatim_quote is present, character-for-character
+    reasoning_trace_coherence:
+      scale: [0, 3]
+      anchors:
+        0: trace does not justify the flag
+        2: justifies but misses nuance
+        3: airtight reasoning
+    verifier_integration:
+      scale: [0, 2]
+      anchors:
+        0: ignored verifier feedback
+        2: integrated verifier outcome into final severity / suppression decision

@@ -1,0 +1,10 @@
+fastapi>=0.100.0
+uvicorn[standard]>=0.24.0
+pocketbase==0.12.1
+boto3>=1.35.0
+pydantic>=2.0.0,<3.0.0
+jinja2>=3.1.0
+sse-starlette>=2.0.0
+httpx>=0.24.1,<0.25.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
