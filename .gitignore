@@ -44,3 +44,5 @@ context.md
 # Tmp
 /tmp/
 *.log
+
+.vercel
